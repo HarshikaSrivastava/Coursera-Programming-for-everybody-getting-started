@@ -1,0 +1,17 @@
+Write a program that repeatedly prompts a user for integer numbers until the user enters 'done'.
+Once 'done' is entered, print out the largest and smallest of the numbers. 
+If the user enters anything other than a valid number catch it with a try/except and put out an appropriate message and ignore the number.
+Enter 7, 2, bob, 10, and 4 and match the output below.
+  
+
+
+def computepay(hours,rate):
+ if hours>40.0:
+  p = rate * 40.0
+  p = p+(1.5*rate*(hours-40))
+ else:
+  p = rate*hours
+ return p
+hours = float(raw_input("Enter worked hours: "))
+rate = float(raw_input("Enter Pay rate per hour: "))
+print("Pay", computepay(hours,rate))
